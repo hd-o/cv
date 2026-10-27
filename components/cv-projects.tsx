@@ -10,15 +10,15 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "👨‍💻 Coding Challenge",
-    description: "Solutions & Experiments",
-    link: "https://github.com/hd-o/coding-challenge",
+    title: "⚽ World Cup Graph Agent",
+    description: "Graph-backed World Cup chatbot",
+    link: "https://github.com/hd-o/world-cup-graph-agent",
     logo: "/logos/github.png",
   },
   {
-    title: "📅 COT Perspective",
-    description: "Pleasant COT Reports",
-    link: "https://github.com/hd-o/cot-perspective",
+    title: "📝 Conciser",
+    description: "Build precise vocabulary for LLM prompts",
+    link: "https://github.com/hd-o/conciser",
     logo: "/logos/github.png",
   },
 ]
