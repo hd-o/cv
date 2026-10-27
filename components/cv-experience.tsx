@@ -7,8 +7,7 @@ interface Role {
   duration: string
   location: string
   locationType: string
-  teamAchievements: string[]
-  individualResponsibilities: string[]
+  description: string[]
 }
 
 interface ExperienceEntry {
@@ -29,23 +28,12 @@ const experiences: ExperienceEntry[] = [
         duration: "1 year 6 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "CRM integration with HubSpot and Salesforce: First ever CRM sync solution with logistics industry-focused custom filters and property mapping, directly from our UI, turning what took sales teams days to setup into few minutes.",
-          "Large dataset search with instant feedback: Search with < 1s feedback using logistics industry-focused filters, powered by weekly data ingestion and estimation pipelines, allowing significantly faster discovery for sales teams.",
-          "SOC2 compliance: Implemented infrastructure changes to meet SOC2 requirements, including network segmentation, app multi-factor authentication, security audits, package vulnerability monitoring, and more.",
-        ],
-        individualResponsibilities: [
-          "Developed CRM OAuth integrations with HubSpot and Salesforce",
-          "Developed location based search with Google Maps Geocoding",
-          "Developed data ingestion pipelines with BullMQ, S3, and Snowflake",
-          "Implemented 2FA workflow (TOTP, and SMS) with Firebase Auth",
-          "Added infrastructure for automated testing with Jest and Playwright",
-          "Full-stack dev with NextJS, TypeScript, and PostgreSQL (AWS RDS)",
-          "Configured CI pipelines with GitHub Actions and Heroku deploy",
-          "Segmented networks with AWS VPCs, and Twingate Connectors",
-          "Implemented AI code review with CodeRabbit and GitHub Copilot",
-          "Implemented agile workflow (scope/estimate/handoff) with Linear",
-          "Led adoption of retrospectives and team health initiatives"
+        description: [
+          "Owned end-to-end development and customer onboarding of a logistics industry-first CRM sync solution integrating HubSpot and Salesforce, with custom filters and property mapping directly from the product UI, reducing sales team setup time from days to minutes",
+          "Engineered logistics data ingestion pipelines (with BullMQ, AWS S3, PostgreSQL, Snowflake), and location-based search powered by Google Maps Geocoding",
+          "Led infrastructure and application hardening for SOC2 compliance; implemented AWS VPC network segmentation, Twingate connectors, Multi-Factor Authentication (Firebase Auth), and automated package vulnerability monitoring",
+          "Established continuous integration and automated testing using GitHub Actions, Heroku, Jest, and Playwright, while embedding automated AI code-reviews (CodeRabbit and GitHub Copilot) to optimize team velocity",
+          "Defined and rolled out agile delivery practices (scope/estimate/handoff) and drove adoption of retrospectives and team-health initiatives",
         ],
       },
     ],
@@ -60,17 +48,11 @@ const experiences: ExperienceEntry[] = [
         duration: "6 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "Mastercard® Physical Credit Cards: Implemented infrastructure, and setup partnerships for deployment and management of physical credit cards with international shipping and payment features",
-          "Tap to Pay with Apple and Google wallets: Implemented infrastructure for deployment of virtual credit cards, enabling payment through digital wallets, and customized org management of cards and credit",
-          "Improved team performance with async agile workflow: Adopted an async-first engineering workflow, less interruptions, more flexibility, more focus, resulting in faster releases, ahead of schedule in high priority projects, and significantly improved team morale",
-        ],
-        individualResponsibilities: [
-          "Managed 5 member Cards engineering team (1:1s, perf, mentoring, pairing)",
-          "Scoped and planned project roadmap and execution with Product team",
-          "Lead development of virtual credit card i2c (auth + security) integration",
-          "Implemented async-first workflow with Linear, Notion, Slack automations",
-          "Full-stack dev with NextJS, tRPC, MetaBase, Retool, SQL, AWS",
+        description: [
+          "Delivered virtual credit card integration supporting Tap to Pay via Apple and Google wallets, with multi-org card and credit management, including i2c authentication",
+          "Supported development of infrastructure and partnership enablement for Mastercard physical credit cards, including international shipping and payment flows",
+          "Led a 5-person Cards engineering team through 1:1s, performance management, mentoring, and pairing while owning roadmap scoping and execution with Product",
+          "Introduced async-first engineering workflow that reduced interruptions, accelerated high-priority releases ahead of schedule, and improved team morale",
         ],
       },
     ],
@@ -86,16 +68,12 @@ const experiences: ExperienceEntry[] = [
         duration: "1 year 6 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "Triple-digit company YoY growth in 2023",
-          "Improved SEO and CWV from ~40 to ~80",
-          "Adopted agile releases, from weekly to daily",
-        ],
-        individualResponsibilities: [
-          "Led and mentored web engineering team",
-          "Migrated codebase from JS to TypeScript",
-          "Added UI integration testing with Cypress",
-          "CWV/SEO with Lighthouse/Search Console",
+        description: [
+          "Led the web engineering team through a period of triple-digit company YoY growth in 2023",
+          "Drove Core Web Vitals and SEO improvements from ~40 to ~80 (Lighthouse and Search Console)",
+          "Migrated codebase from JavaScript to TypeScript and introduced Cypress integration testing",
+          "Owned technical direction for performance, and reliability on a high-traffic consumer web platform",
+          "Shifted team from weekly to daily agile release cadence",
         ],
       },
       {
@@ -104,15 +82,9 @@ const experiences: ExperienceEntry[] = [
         duration: "5 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "Lowered web infrastructure costs by 25%",
-          "Deploy duration from ~40min to ~10min",
-          "In-house high throughput web analytics",
-        ],
-        individualResponsibilities: [
-          "Setup with Cloudflare and AWS App Runner",
-          "DevOps with Docker, CI with GitHub Actions",
-          "Code with React, TypeScript, and RxJS",
+        description: [
+          "Reduced web infrastructure costs by 25% and cut deployment duration from ~40 min to ~10 min, by migrating from Jenkins CI and AWS Elastic Beanstalk to GitHub Actions CI and AWS App Runner",
+          "Built in-house high-throughput web analytics and telemetry pipeline with React and RxJS",
         ],
       },
     ],
@@ -127,15 +99,10 @@ const experiences: ExperienceEntry[] = [
         duration: "8 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "FINRA recognition for best audited tools",
-          "Hour-long tasks into seconds with automation",
-          "Improved ops efficiency with back-office tools",
-        ],
-        individualResponsibilities: [
-          "Data dashboards with SQL and Retool",
-          "Backend server with Node.js and TypeScript",
-          "Testing with BrowserStack and Cypress",
+        description: [
+          "Built back-office automation tools that compressed hour-long operational tasks into seconds and earned FINRA recognition for audit quality",
+          "Developed dashboards and tooling with SQL and Retool that measurably improved ops efficiency",
+          "Owned back-office encryption services, and end-to-end testing with BrowserStack and Cypress",
         ],
       },
     ],
@@ -151,13 +118,9 @@ const experiences: ExperienceEntry[] = [
         duration: "4 months",
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
-        teamAchievements: [
-          "Live chat UI for CS agents",
-          "Code migration to Vue.js",
-        ],
-        individualResponsibilities: [
-          "Chat interface development with Vue.js",
-          "Automated testing with Nightwatch.JS",
+        description: [
+          "Owned live chat UI for customer-service agents and supported codebase migration to Vue.js",
+          "Implemented automated UI testing, improving reliability of internal agent-facing applications",
         ],
       },
       {
@@ -166,9 +129,8 @@ const experiences: ExperienceEntry[] = [
         duration: "4 months",
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
-        teamAchievements: ["Live chat accessible to million+ users"],
-        individualResponsibilities: [
-          "UI development with React and Redux",
+        description: [
+          "Developed live chat and chatbot interfaces used by million+ users",
         ],
       },
       {
@@ -177,14 +139,9 @@ const experiences: ExperienceEntry[] = [
         duration: "11 months",
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
-        teamAchievements: [
-          "User issue self-service resolution tools",
-          "Reduced CS load with redesigned FAQs",
-        ],
-        individualResponsibilities: [
-          "Research and deploy experiments (A/B)",
-          "Participate in user testing sessions",
-          "Develop web customer service tools",
+        description: [
+          "Developed self-service issue-resolution tools and FAQs that reduced customer-support load",
+          "Ran A/B experiments, user research sessions, and developed web-based CS tooling",
         ],
       },
     ],
@@ -199,15 +156,10 @@ const experiences: ExperienceEntry[] = [
         duration: "1 year",
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
-        teamAchievements: [
-          "Presented at Web Summit Lisbon 2018",
-          "Received funding from the City of Amsterdam",
-          "Research projects with universities in Amsterdam",
-        ],
-        individualResponsibilities: [
-          "Present project to mentors and investors",
-          "Mobile development with Cordova and React",
-          "API development with MongoDB and Node.js",
+        description: [
+          "Built a mobile app prototype for event listing to support social networking in big cities",
+          "Presented the product at Web Summit Lisbon 2018, secured funding from the City of Amsterdam, and collaborated on research projects with local universities",
+          "Pitched technical progress and roadmap to mentors and investors",
         ],
       },
     ],
@@ -222,13 +174,9 @@ const experiences: ExperienceEntry[] = [
         duration: "10 months",
         location: "Berlin, Germany",
         locationType: "On-site",
-        teamAchievements: [
-          "Improved hiring through smart job post distribution",
-          "Platform for easy job application, and CV design",
-        ],
-        individualResponsibilities: [
-          "Web development with JavaScript and React",
-          "Product research through live user sessions",
+        description: [
+          "Developed web features for job-post distribution, simplified application, and CV PDF generation",
+          "Conducted live user research sessions to inform product direction",
         ],
       },
     ],
@@ -243,14 +191,9 @@ const experiences: ExperienceEntry[] = [
         duration: "1 year",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [
-          "Released an online algorithmic trading platform",
-          "Developed a marketplace for trading models",
-        ],
-        individualResponsibilities: [
-          "Development with JavaScript and React",
-          "App migration from Angular to React",
-          "Training and onboarding team member",
+        description: [
+          "Developed the frontend of an algorithmic trading platform and marketplace for trading models",
+          "Led migration from Angular to React and onboarded/trained new team members",
         ],
       },
     ],
@@ -265,10 +208,8 @@ const experiences: ExperienceEntry[] = [
         duration: "2 years 3 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
-        teamAchievements: [],
-        individualResponsibilities: [
-          "Web design with Adobe Fireworks",
-          "Web development with PHP and MySQL",
+        description: [
+          "Delivered web designs (Adobe Fireworks), full-stack web development (PHP + MySQL), and long-form presentation designs (PowerPoint) for local and international clients",
         ],
       },
     ],
@@ -283,8 +224,9 @@ const experiences: ExperienceEntry[] = [
         duration: "3 months",
         location: "Presidente Prudente, São Paulo, Brazil",
         locationType: "On-site",
-        teamAchievements: ["College-wide event management system"],
-        individualResponsibilities: ["Development with VB.net and Web Forms"],
+        description: [
+          "Developed full-stack features for college-wide event management system",
+        ],
       },
     ],
   },
@@ -308,34 +250,14 @@ function RoleEntry({ role, showTimeline, isLast }: { role: Role; showTimeline: b
           {role.location} • {role.locationType}
         </p>
 
-        {(role.teamAchievements.length > 0 || role.individualResponsibilities.length > 0) && (
-          <div className="mt-3 grid grid-cols-2 gap-4">
-            {role.teamAchievements.length > 0 && (
-              <div>
-                <p className="text-caption font-bold text-foreground">Team Achievements</p>
-                <ul className="mt-1 space-y-1">
-                  {role.teamAchievements.map((achievement, i) => (
-                    <li key={i} className="text-caption leading-relaxed">
-                      {"• " + achievement}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {role.individualResponsibilities.length > 0 && (
-              <div>
-                <p className="text-caption font-bold text-foreground">Individual Responsibilities</p>
-                <ul className="mt-1 space-y-1">
-                  {role.individualResponsibilities.map((resp, i) => (
-                    <li key={i} className="text-caption leading-relaxed">
-                      {"• " + resp}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
+        {role.description.length > 0 && (
+          <ul className="mt-3 space-y-1">
+            {role.description.map((bullet, i) => (
+              <li key={i} className="text-caption leading-relaxed">
+                {"• " + bullet}
+              </li>
+            ))}
+          </ul>
         )}
       </div>
     </div>
