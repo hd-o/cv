@@ -5,7 +5,6 @@ interface EducationEntry {
   logo: string
   degree: string
   field: string
-  note: string
   dateRange: string
 }
 
@@ -15,7 +14,6 @@ const education: EducationEntry[] = [
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
     degree: "Bachelor of Science - BS",
     field: "Information Technology",
-    note: "Dropout",
     dateRange: "2015 – 2015",
   },
   {
@@ -23,7 +21,6 @@ const education: EducationEntry[] = [
     logo: "/logos/unesp.jpeg",
     degree: "Bachelor of Science - BS",
     field: "Computer Science",
-    note: "Dropout",
     dateRange: "2014 – 2014",
   },
 ]
@@ -44,7 +41,7 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
           {entry.institution}
         </p>
         <p className="text-caption text-muted-foreground">
-          {entry.degree} • {entry.field} • {entry.note}
+          {entry.degree} • {entry.field}
         </p>
         <p className="text-caption text-muted-foreground">{entry.dateRange}</p>
       </div>
