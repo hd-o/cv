@@ -23,10 +23,10 @@ const specializations: Specialization[] = [
     link: "https://www.coursera.org/account/accomplishments/verify/KG8HECTHYF74",
   },
   {
-    name: "Entrepreneurship Fundamentals",
-    issuer: "The Wharton School",
-    logo: "/logos/the_wharton_school.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/specialization/9CP3EH28UCJP",
+    name: "RAG and Agentic AI",
+    issuer: "IBM",
+    logo: "/logos/ibm.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/PCUS0G5GLX83",
   },
   // {
   //   name: "Accounting Fundamentals",
