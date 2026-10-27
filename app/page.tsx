@@ -10,8 +10,8 @@ import { Separator } from "@/components/ui/separator"
 export default function Home() {
   return (
     <div className="flex min-h-screen justify-center bg-background font-sans">
-      <main className="w-full max-w-6xl px-6 sm:px-10">
-        <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+      <main className="w-full max-w-6xl">
+        <div className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
           <div className="bg-gray-50 px-6 pt-10 pb-20">
             <CVHeader />
             <Separator className="my-6" />
@@ -27,7 +27,7 @@ export default function Home() {
               <CVEducation />
             </div>
           </div>
-          <div className="pt-10 pb-20">
+          <div className="pt-10 pb-20 px-6">
             <CVExperience />
           </div>
         </div>
