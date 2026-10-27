@@ -302,7 +302,7 @@ function ExperienceCard({ entry }: { entry: ExperienceEntry }) {
 
 export function CVExperience() {
   return (
-    <section className="pt-6">
+    <section>
       <h2 className="text-lg font-semibold text-foreground">Experience</h2>
       <div className="mt-4 flex flex-col gap-6">
         {experiences.map((entry, i) => (
