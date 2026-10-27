@@ -148,6 +148,7 @@ vite.config.ts.timestamp-*
 # Turbo Repo
 .turbo
 
+.DS_Store
 .local
 # Playwright CLI output (may contain credentials)
 .playwright-cli/
