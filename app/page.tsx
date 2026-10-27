@@ -1,6 +1,7 @@
 import { CVHeader } from "@/components/cv-header"
 import { CVIntro } from "@/components/cv-intro"
 import { CVExperience } from "@/components/cv-experience"
+import { CVCertifications } from "@/components/cv-certifications"
 import { CVSpecializations } from "@/components/cv-specializations"
 import { CVProjects } from "@/components/cv-projects"
 import { CVEducation } from "@/components/cv-education"
@@ -16,6 +17,8 @@ export default function Home() {
           <CVIntro />
           <Separator />
           <CVExperience />
+          <Separator />
+          <CVCertifications />
           <Separator />
           <CVSpecializations />
           <Separator />
