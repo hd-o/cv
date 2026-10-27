@@ -35,7 +35,7 @@ export function CVSpecializations() {
   return (
     <section>
       <h2 className="text-title font-semibold text-foreground">Specializations</h2>
-      <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-5">
         {specializations.map((entry) => (
           <CVDetailCard key={entry.link} title={entry.name} issuer={entry.issuer} description={entry.description} link={entry.link} linkLabel="See credential" logo={entry.logo} logoAlt={`${entry.issuer} logo`} />
         ))}

@@ -11,20 +11,23 @@ export default function Home() {
   return (
     <div className="flex min-h-screen justify-center bg-background font-sans">
       <main className="w-full max-w-6xl px-6 py-10 sm:px-10 mb-7">
-        <CVHeader />
-        <Separator className="my-8" />
-        <div className="flex flex-col gap-8">
-          <CVIntro />
-          <Separator />
+        <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+          <div className="bg-gray-50 p-6">
+            <CVHeader />
+            <Separator className="my-8" />
+            <CVIntro />
+            <Separator className="my-8" />
+            <div className="flex flex-col gap-8">
+              <CVCertifications />
+              <Separator />
+              <CVSpecializations />
+              <Separator />
+              <CVProjects />
+              <Separator />
+              <CVEducation />
+            </div>
+          </div>
           <CVExperience />
-          <Separator />
-          <CVCertifications />
-          <Separator />
-          <CVSpecializations />
-          <Separator />
-          <CVProjects />
-          <Separator />
-          <CVEducation />
         </div>
       </main>
     </div>

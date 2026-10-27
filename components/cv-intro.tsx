@@ -1,5 +1,3 @@
-import { Separator } from "@/components/ui/separator"
-
 interface IntroSection {
   title: string
   points: string[]
@@ -33,7 +31,7 @@ const introSections: IntroSection[] = [
 
 export function CVIntro() {
   return (
-    <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="grid grid-cols-1 gap-6">
       {introSections.map((section, i) => (
         <div key={i}>
           <h2 className="text-title font-semibold text-foreground mb-3">{section.title}</h2>

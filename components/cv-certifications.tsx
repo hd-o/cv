@@ -17,7 +17,7 @@ export function CVCertifications() {
   return (
     <section>
       <h2 className="text-title font-semibold text-foreground">Certifications</h2>
-      <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-5">
         {certifications.map((entry) => (
           <CVDetailCard key={entry.link} title={entry.name} issuer="Amazon Web Services (AWS)" description={entry.description} link={entry.link} linkLabel="See credential" logo="/logos/aws.jpeg" logoAlt="AWS logo" />
         ))}

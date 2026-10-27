@@ -53,7 +53,7 @@ export function CVEducation() {
   return (
     <section>
       <h2 className="text-title font-semibold text-foreground">Education</h2>
-      <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-5">
         {education.map((entry, i) => (
           <EducationCard key={i} entry={entry} />
         ))}

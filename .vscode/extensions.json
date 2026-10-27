@@ -7,5 +7,7 @@
     "darkriszty.markdown-table-prettify",
     // Spelling
     "streetsidesoftware.code-spell-checker",
+    // Syntax
+    "bradlc.vscode-tailwindcss",
   ]
 }

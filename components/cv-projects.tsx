@@ -17,7 +17,7 @@ export function CVProjects() {
   return (
     <section>
       <h2 className="text-title font-semibold text-foreground">Projects</h2>
-      <div className="mt-4 grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-5">
         {projects.map((project) => (
           <CVDetailCard key={project.link} title={project.title} description={project.description} link={project.link} linkLabel="View project" logo="/logos/github.png" logoAlt="GitHub logo" />
         ))}
