@@ -3,12 +3,12 @@ import { CVDetailCard } from "@/components/cv-detail-card"
 const projects = [
   {
     title: "World Cup Graph Agent",
-    description: "Built an open-source Python/Neo4j demonstration agent using DeepAgents and OpenRouter, with separate approvals for external research and graph writes. Implemented conversation-access controls, evaluation scenarios, and LangSmith tracing. Added AWS AgentCore and GCP Cloud Run deployment implementations and ran selected authentication, conversation-isolation, and approval-rejection checks on GCP.",
+    description: "Built an open-source Python/Neo4j agent demo using LangChain DeepAgents, with separate approvals for external research and graph writes. Implemented access controls, evals, and tracing. Added AWS AgentCore and GCP Cloud Run deployments.",
     link: "https://github.com/hd-o/world-cup-graph-agent",
   },
   {
     title: "Conciser",
-    description: "Research and product design project investigating whether vocabulary training and semantic compression—expressing complex ideas in fewer words—can improve AI prompting precision and reduce writing time and revision cycles. Designed a learning application around contextual vocabulary practice, active recall, and adaptive review.",
+    description: "Research project investigating wether vocabulary training (expressing complex ideas in fewer words) can improve one's AI prompting precision and reduce writing time and iteration cycles. Designed a learning application around contextual vocabulary practice, active recall, and adaptive review.",
     link: "https://github.com/hd-o/conciser",
   },
 ]
