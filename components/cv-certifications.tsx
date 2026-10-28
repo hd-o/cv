@@ -2,7 +2,7 @@ import { CVDetailCard } from "@/components/cv-detail-card"
 
 const certifications = [
   {
-    name: "AWS Certified Solutions Architect – Associate",
+    name: "AWS Certified Solutions Architect",
     link: "https://www.credly.com/badges/c286eb67-85e3-4faa-b076-db4e8e695936/public_url",
     description: "SAA-C03 validates knowledge of designing secure, resilient, high-performing cloud architectures and optimizing costs using the AWS Well-Architected Framework and services including EC2, S3, VPC, and IAM.",
   },

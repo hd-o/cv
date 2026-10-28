@@ -68,7 +68,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led web engineering and shifted the team from weekly to daily releases, supported by faster deployment and recovery cycles.",
+          "Led web engineering and shifted team from weekly to daily releases, and async status updates.",
           "Migrated the codebase from JavaScript to TypeScript and introduced Cypress integration testing.",
         ],
       },
@@ -79,7 +79,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Migrated web deployments from Jenkins and AWS Elastic Beanstalk to GitHub Actions and AWS App Runner, reducing web infrastructure costs by 25% and deployment time from approximately 40 to 10 minutes.",
+          "Migrated web deployments from Jenkins and AWS Elastic Beanstalk to GitHub Actions and AWS App Runner, reducing web infrastructure costs by 25% and deployment time from ~40 to ~10 minutes.",
           "Automated per-PR preview environments with GitHub Actions and App Runner, creating services when needed and deleting them when PRs closed, without requiring a Next.js migration.",
           "Built an in-house web analytics and telemetry pipeline with React and RxJS.",
         ],
@@ -97,7 +97,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led development of Retool dashboards and internal operations tools, working with backend engineers on supporting APIs and data; replaced spreadsheet-and-email workflows and reduced hour-long tasks to seconds.",
+          "Led development of Retool dashboards and internal operations tools, isolated encryption server; replaced spreadsheet-and-email workflows and reduced hour-long tasks to seconds.",
           "Owned back-office encryption services and end-to-end testing with BrowserStack and Cypress.",
         ],
       },
@@ -137,6 +137,7 @@ const experiences: ExperienceEntry[] = [
         locationType: "On-site",
         description: [
           "Developed self-service support tools used by millions of users.",
+          "Built Chrome extension for ML team to change in-browser experiment settings.",
           "Ran A/B experiments and user research sessions to improve customer-service tools."
         ],
       },

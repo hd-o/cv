@@ -6,14 +6,14 @@ const specializations = [
     issuer: "Google",
     logo: "/logos/google.jpeg",
     link: "https://www.coursera.org/account/accomplishments/professional-cert/TPF5A2PT3WQF",
-    description: "The project management lifecycle, including initiation, project planning, execution, Agile and Scrum methodologies, risk management, and stakeholder management and communication.",
+    description: "Project lifecycle, including initiation, project planning, execution. Agile, Scrum, risk management, and stakeholder management.",
   },
   {
     name: "IBM RAG and Agentic AI",
     issuer: "IBM",
     logo: "/logos/ibm.jpeg",
     link: "https://www.coursera.org/account/accomplishments/specialization/PCUS0G5GLX83",
-    description: "Building retrieval-augmented generation (RAG) applications and agentic RAG workflows, using vector databases for information retrieval, LLM tool calling, and frameworks such as LangChain and LangGraph.",
+    description: "Building retrieval-augmented generation (RAG) applications and agentic workflows, using vector databases for information retrieval, LLM tool calling, and frameworks such as LangChain and LangGraph.",
   },
 ]
 

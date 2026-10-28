@@ -12,14 +12,14 @@ const education: EducationEntry[] = [
   {
     institution: "Toledo Prudente Centro Universitário",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
-    field: "Information Systems",
+    field: "B.Sc. Information Systems",
     status: "Dropout",
     dateRange: "2015–2016",
   },
   {
-    institution: "Universidade Estadual Paulista Júlio de Mesquita Filho",
+    institution: "Universidade Estadual Paulista Júlio de Mesquita Filho (Unesp)",
     logo: "/logos/unesp.jpeg",
-    field: "Computer Science",
+    field: "B.Sc. Computer Science",
     status: "Dropout",
     dateRange: "2014–2015",
   },
@@ -41,7 +41,7 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
           {entry.institution}
         </p>
         <p className="text-caption text-muted-foreground">
-          Coursework in {entry.field} · {entry.status}
+          {entry.field} · {entry.status}
         </p>
         <p className="text-caption text-muted-foreground">{entry.dateRange}</p>
       </div>
