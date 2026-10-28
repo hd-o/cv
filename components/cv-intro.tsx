@@ -15,17 +15,17 @@ const summary: IntroSection = {
 const technicalSkills: IntroSection = {
   title: "Technical Skills",
   points: [
-    "Language: C#, Go, Python, Rust, SQL, TypeScript.",
-    "Web & Data: Angular, Neo4j, Next.js, Node.js, PostgreSQL, React, Snowflake, Vue.js.",
-    "Cloud & Delivery: AWS, Docker, GitHub Actions, Google Cloud, Heroku, Jenkins.",
-    "Testing & Tools: BrowserStack, Cypress, Jest, Playwright, Pytest, Retool.",
-    "AI: AWS Bedrock, GCP Gemini Enterprise, LangChain, LangGraph, OpenRouter.",
+    "Languages: C#, Cypher, JavaScript, PHP, Python, Rust, SQL, TypeScript.",
+    "Web & Data: Angular, MySQL, Neo4j, Next.js, Node.js, PostgreSQL, React.js, Snowflake, Vue.js.",
+    "Cloud: AWS, Cloudflare, Docker, GitHub Actions, Google Cloud, Heroku, Jenkins, Vercel.",
+    "Testing & Tools: BrowserStack, Cypress, Jest, Playwright, Pytest, Retool, Testcontainers.",
+    "AI: AWS Bedrock, Arize Phoenix, GCP Gemini Enterprise, LangChain, LangGraph, LangSmith.",
   ],
 }
 
 function IntroSectionContent({ title, points }: IntroSection) {
   return (
-    <section>
+    <section className="cv-intro">
       <h2 className="text-title font-semibold text-foreground mb-3">{title}</h2>
       <ul className="space-y-2">
         {points.map((point) => (

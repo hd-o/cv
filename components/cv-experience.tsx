@@ -51,7 +51,7 @@ const experiences: ExperienceEntry[] = [
         description: [
           "Led a five-person Cards team, owning roadmap delivery with Product for Apple Pay and Google Wallet integrations and supporting the Mastercard physical-card rollout.",
           "Implemented web-based card PIN entry and the i2c verification integration; worked directly with i2c engineers to diagnose issues, test fixes, and unblock delivery.",
-          "Coached engineers through pairing and mentoring; replaced daily stand-ups with asynchronous Slack updates and project status reporting in Linear.",
+          "Coached and mentored engineers; Introduced async stand-ups and project status reporting in Linear.",
         ],
       },
     ],
@@ -81,7 +81,7 @@ const experiences: ExperienceEntry[] = [
         description: [
           "Migrated web deployments from Jenkins and AWS Elastic Beanstalk to GitHub Actions and AWS App Runner, reducing web infrastructure costs by 25% and deployment time from ~40 to ~10 minutes.",
           "Automated per-PR preview environments with GitHub Actions and App Runner, creating services when needed and deleting them when PRs closed, without requiring a Next.js migration.",
-          "Built an in-house web analytics and telemetry pipeline with React and RxJS.",
+          "Built in-house web analytics and telemetry pipelines with RxJS.",
         ],
       },
     ],
@@ -126,7 +126,7 @@ const experiences: ExperienceEntry[] = [
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Built live-chat and chatbot interfaces used by more than one million users.",
+          "Built live-chat and chatbot interfaces used by million+ users.",
         ],
       },
       {
@@ -137,8 +137,8 @@ const experiences: ExperienceEntry[] = [
         locationType: "On-site",
         description: [
           "Developed self-service support tools used by millions of users.",
-          "Built Chrome extension for ML team to change in-browser experiment settings.",
-          "Ran A/B experiments and user research sessions to improve customer-service tools."
+          "Built Chrome extension for ML team to manage experiment settings.",
+          "Ran customer-service A/B experiments and user research sessions."
         ],
       },
     ],
@@ -154,8 +154,9 @@ const experiences: ExperienceEntry[] = [
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Built a mobile event-discovery prototype and presented it at Web Summit Lisbon 2018;",
-          "Presented to mentors and investors, receiving funding from the City of Amsterdam.",
+          "Built an event mobile app with React, Node.js, and MongoDB.",
+          "Presented conference attendees at a Web Summit Lisbon 2018 booth.",
+          "Pitched to investors, receiving funding from the City of Amsterdam.",
         ],
       },
     ],
@@ -171,7 +172,8 @@ const experiences: ExperienceEntry[] = [
         location: "Berlin, Germany",
         locationType: "On-site",
         description: [
-          "Built job-post distribution, application, and CV PDF-generation features, informed by live user research.",
+          "Built job-post distribution web app with React.",
+          "Built web-based CV PDF-generation."
         ],
       },
     ],
@@ -187,7 +189,8 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Built frontend of an algorithmic trading platform; Led React migration, and trained team members.",
+          "Built frontend of an algorithmic trading platform.",
+          "Led React migration, and trained team members."
         ],
       },
     ],
@@ -203,7 +206,8 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Delivered web design and PHP/MySQL development for local and international clients.",
+          "Web design and PHP/MySQL web development.",
+          "Enterprise PowerPoint presentation design."
         ],
       },
     ],
@@ -219,23 +223,17 @@ const experiences: ExperienceEntry[] = [
         location: "Presidente Prudente, São Paulo, Brazil",
         locationType: "On-site",
         description: [
-          "Built full-stack features for a college-wide ASP.NET event-management system.",
+          "Built features for ASP.NET event-management system.",
         ],
       },
     ],
   },
 ]
 
-function RoleEntry({ role, showTimeline, isLast }: { role: Role; showTimeline: boolean; isLast: boolean }) {
+function RoleEntry({ role }: { role: Role }) {
   return (
-    <div className="flex gap-4">
-      {showTimeline && (
-        <div className="flex flex-col items-center pt-2">
-          <div className="h-2 w-2 rounded-full bg-muted-foreground/40" />
-          {!isLast && <div className="w-px flex-1 bg-border" />}
-        </div>
-      )}
-      <div className={`flex-1 pb-6 ${showTimeline ? "" : ""}`}>
+    <div className="cv-role flex gap-4">
+      <div className="cv-role-content flex-1 pb-6">
         <h4 className="text-body font-semibold text-foreground">{role.title}</h4>
         <p className="text-caption text-muted-foreground">
           {role.dateRange} • {role.duration}
@@ -259,35 +257,28 @@ function RoleEntry({ role, showTimeline, isLast }: { role: Role; showTimeline: b
 }
 
 function ExperienceCard({ entry }: { entry: ExperienceEntry }) {
-  const hasMultipleRoles = entry.roles.length > 1
-
   return (
-    <div className="flex gap-3">
-      <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md border bg-muted">
+    <div className="cv-experience-card flex gap-3">
+      <div className="cv-logo relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md border bg-muted">
         <Image
           src={entry.logo}
           alt={`${entry.company} logo`}
           fill
+          loading="eager"
           className="object-contain"
         />
       </div>
       <div className="flex-1">
-        <div className="flex items-start justify-between">
+        <div className="cv-company-heading flex items-start justify-between">
           <div>
             <h3 className="text-body font-semibold text-foreground">{entry.company}</h3>
           </div>
         </div>
 
         <div className="mt-1">
-          {hasMultipleRoles ? (
-            entry.roles.map((role, i) => (
-              <RoleEntry key={i} role={role} showTimeline={true} isLast={i === entry.roles.length - 1} />
-            ))
-          ) : (
-            entry.roles.map((role, i) => (
-              <RoleEntry key={i} role={role} showTimeline={false} isLast={i === entry.roles.length - 1} />
-            ))
-          )}
+          {entry.roles.map((role, i) => (
+            <RoleEntry key={i} role={role} />
+          ))}
         </div>
       </div>
     </div>
@@ -296,11 +287,11 @@ function ExperienceCard({ entry }: { entry: ExperienceEntry }) {
 
 export function CVExperience() {
   return (
-    <section>
+    <section className="cv-experience">
       <h2 className="text-lg font-semibold text-foreground">Experience</h2>
-      <div className="mt-4 flex flex-col gap-6">
+      <div className="cv-experience-list mt-4 flex flex-col gap-6">
         {experiences.map((entry, i) => (
-          <div key={i}>
+          <div key={i} className="cv-experience-entry">
             <ExperienceCard entry={entry} />
             {i < experiences.length - 1 && <Separator />}
           </div>

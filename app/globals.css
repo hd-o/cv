@@ -125,3 +125,189 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  :root {
+    color-scheme: light;
+    --background: #fff;
+    --foreground: #171717;
+    --muted: #f4f4f5;
+    --muted-foreground: #52525b;
+    --border: #d4d4d8;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .cv-page {
+    --cv-print-sidebar-width: 36%;
+    display: block;
+    min-height: 0;
+    isolation: isolate;
+  }
+
+  /* A fixed backdrop repeats within each page's margins, even after content ends. */
+  .cv-page::before {
+    content: "";
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: var(--cv-print-sidebar-width);
+    background: var(--color-gray-50);
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .cv-document {
+    max-width: none;
+    font-size: 10pt;
+    line-height: 1.35;
+  }
+
+  .cv-separator {
+    opacity: 0.3;
+  }
+
+  /* Paper columns must not depend on the screen's responsive breakpoint. */
+  .cv-columns {
+    grid-template-columns: minmax(0, var(--cv-print-sidebar-width)) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  /* Repeat column padding on every printed page fragment. */
+  .cv-sidebar,
+  .cv-experience-column {
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .cv-sidebar {
+    padding: 3mm;
+  }
+
+  .cv-experience-column {
+    padding: 3mm 0 0 3mm;
+  }
+
+  .cv-document :is(.text-body, .text-caption) {
+    font-size: 9pt;
+    line-height: 1.35;
+  }
+
+  .cv-document h1 {
+    font-size: 15pt;
+    line-height: 1.2;
+  }
+
+  .cv-document h2 {
+    margin-bottom: 2mm;
+    font-size: 11.5pt;
+    line-height: 1.2;
+  }
+
+  .cv-document :is(h1, h2, h3, h4),
+  .cv-company-heading,
+  .cv-role-content > p {
+    break-after: avoid;
+  }
+
+  .cv-document :is(p, li) {
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* Keep short entries intact; long company histories can break between roles. */
+  .cv-header,
+  .cv-intro,
+  .cv-detail-card,
+  .cv-education-card,
+  .cv-role,
+  .cv-document li {
+    break-inside: avoid;
+  }
+
+  .cv-header {
+    gap: 3mm;
+  }
+
+  .cv-header a {
+    overflow-wrap: anywhere;
+  }
+
+  .cv-header .break-all {
+    word-break: normal;
+  }
+
+  /* Block flow lets sidebar sections and experience entries paginate naturally. */
+  .cv-sidebar-sections,
+  .cv-sidebar section > div,
+  .cv-experience-list {
+    display: block;
+  }
+
+  .cv-sidebar section > div,
+  .cv-experience-list {
+    margin-top: 2mm;
+  }
+
+  .cv-document [data-slot="separator"] {
+    margin-block: 3mm;
+  }
+
+  .cv-intro li {
+    margin-block: 0 1.5mm;
+  }
+
+  .cv-detail-card + .cv-detail-card,
+  .cv-education-card + .cv-education-card {
+    margin-top: 6mm;
+  }
+
+  .cv-logo {
+    width: 7mm;
+    height: 7mm;
+  }
+
+  .cv-detail-card {
+    display: flow-root;
+  }
+
+  .cv-detail-card > .cv-logo {
+    float: left;
+    margin: 0 2mm 1mm 0;
+  }
+
+  .cv-detail-card p:last-child {
+    clear: both;
+    margin-top: 1mm;
+  }
+
+  .cv-experience-card,
+  .cv-education-card,
+  .cv-role {
+    gap: 2mm;
+  }
+
+  .cv-role-content {
+    padding-bottom: 3mm;
+  }
+
+  .cv-role:last-child > .cv-role-content {
+    padding-bottom: 0;
+  }
+
+  .cv-role-content ul {
+    margin-top: 1.5mm;
+  }
+
+  .cv-role-content li {
+    margin-block: 0 1mm;
+  }
+
+}

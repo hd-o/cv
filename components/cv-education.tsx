@@ -27,12 +27,13 @@ const education: EducationEntry[] = [
 
 function EducationCard({ entry }: { entry: EducationEntry }) {
   return (
-    <div className="flex items-start gap-3">
-      <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md border bg-muted">
+    <div className="cv-education-card flex items-start gap-3">
+      <div className="cv-logo relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-md border bg-muted">
         <Image
           src={entry.logo}
           alt={`${entry.institution} logo`}
           fill
+          loading="eager"
           className="object-contain"
         />
       </div>
@@ -41,9 +42,11 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
           {entry.institution}
         </p>
         <p className="text-caption text-muted-foreground">
-          {entry.field} · {entry.status}
+          {entry.field}
         </p>
-        <p className="text-caption text-muted-foreground">{entry.dateRange}</p>
+        <p className="text-caption text-muted-foreground">
+          {entry.dateRange} · {entry.status}
+        </p>
       </div>
     </div>
   )

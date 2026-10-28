@@ -9,15 +9,15 @@ import { Separator } from "@/components/ui/separator"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen justify-center bg-background font-sans">
-      <main className="w-full max-w-6xl">
-        <div className="grid md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-          <div className="bg-gray-50 px-6 pt-10 pb-20">
+    <div className="cv-page flex min-h-screen justify-center bg-background font-sans">
+      <main className="cv-document w-full max-w-6xl">
+        <div className="cv-columns grid md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+          <div className="cv-sidebar bg-gray-50 px-6 pt-10 pb-20">
             <CVHeader />
             <Separator className="my-6" />
             <CVSummary />
             <Separator className="my-6" />
-            <div className="flex flex-col gap-6">
+            <div className="cv-sidebar-sections flex flex-col gap-6">
               <CVProjects />
               <Separator />
               <CVTechnicalSkills />
@@ -29,7 +29,7 @@ export default function Home() {
               <CVEducation />
             </div>
           </div>
-          <div className="pt-10 pb-20 px-6">
+          <div className="cv-experience-column pt-10 pb-20 px-6">
             <CVExperience />
           </div>
         </div>
