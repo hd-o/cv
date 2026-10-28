@@ -3,48 +3,44 @@ interface IntroSection {
   points: string[]
 }
 
-const introSections: IntroSection[] = [
-  {
-    title: "Summary",
-    points: [
-      "Full-Stack Engineer: Specializing in Software Architecture, and Project Management",
-      "Get-It-Done Type: Focused on business growth, team work, and process automation",
-      "Experience: 13+ years of software engineering and management at companies across 5 countries",
-    ],
-  },
-  {
-    title: "Values",
-    points: [
-      "Business-First: Prioritize business objectives, and gradual long-term technical progress",
-      "Discipline: Organized, gradual and consistent improvement of work performance",
-      "Transparency: Honest and proactive communication with peers and stakeholders",
-    ],
-  },
-  {
-    title: "Keywords",
-    points: [
-      "Techniques: Agile, AI, Automated Testing, CI/CD, DDD, DevOps, Functional, KISS, ML, OOP, Product Research, SOC2, SEO, SOLID",
-      "Technologies: AWS, Docker, GCP, GitHub Actions, Go, Langchain, NextJS, Node.js, PostgreSQL, Python, React, Retool, SQL, TypeScript",
-    ],
-  },
-]
+const summary: IntroSection = {
+  title: "Summary",
+  points: [
+    "Software engineer with founding-engineer and engineering-management experience, delivering products across logistics, fintech, and consumer platforms.",
+    "Led CRM integrations and customer onboarding, improved AWS infrastructure, and managed a five-person engineering team.",
+    "Built an open-source Python/Neo4j agent with approval controls and evaluation workflows.",
+  ],
+}
 
-export function CVIntro() {
+const technicalSkills: IntroSection = {
+  title: "Technical Skills",
+  points: [
+    "Languages: TypeScript, JavaScript, Python, SQL.",
+    "Software & cloud: Node.js, React, Next.js, AWS, Docker, PostgreSQL, Snowflake, GitHub Actions, automated testing.",
+    "AI projects: LangChain/DeepAgents, LangGraph, Neo4j, LangSmith, OpenRouter, GCP Cloud Run.",
+  ],
+}
+
+function IntroSectionContent({ title, points }: IntroSection) {
   return (
-    <section className="grid grid-cols-1 gap-6">
-      {introSections.map((section, i) => (
-        <div key={i}>
-          <h2 className="text-title font-semibold text-foreground mb-3">{section.title}</h2>
-          <ul className="space-y-2">
-            {section.points.map((point, j) => (
-              <li key={j} className="text-caption leading-relaxed flex items-start">
-                <span className="mr-2 text-foreground/50">•</span>
-                <span>{point}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+    <section>
+      <h2 className="text-title font-semibold text-foreground mb-3">{title}</h2>
+      <ul className="space-y-2">
+        {points.map((point) => (
+          <li key={point} className="text-caption leading-relaxed flex items-start">
+            <span className="mr-2 text-foreground/50">•</span>
+            <span>{point}</span>
+          </li>
+        ))}
+      </ul>
     </section>
   )
+}
+
+export function CVSummary() {
+  return <IntroSectionContent {...summary} />
+}
+
+export function CVTechnicalSkills() {
+  return <IntroSectionContent {...technicalSkills} />
 }

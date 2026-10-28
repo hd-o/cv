@@ -1,5 +1,5 @@
 import { CVHeader } from "@/components/cv-header"
-import { CVIntro } from "@/components/cv-intro"
+import { CVSummary, CVTechnicalSkills } from "@/components/cv-intro"
 import { CVExperience } from "@/components/cv-experience"
 import { CVCertifications } from "@/components/cv-certifications"
 import { CVSpecializations } from "@/components/cv-specializations"
@@ -15,14 +15,16 @@ export default function Home() {
           <div className="bg-gray-50 px-6 pt-10 pb-20">
             <CVHeader />
             <Separator className="my-6" />
-            <CVIntro />
+            <CVSummary />
             <Separator className="my-6" />
             <div className="flex flex-col gap-6">
+              <CVProjects />
+              <Separator />
+              <CVTechnicalSkills />
+              <Separator />
               <CVCertifications />
               <Separator />
               <CVSpecializations />
-              <Separator />
-              <CVProjects />
               <Separator />
               <CVEducation />
             </div>

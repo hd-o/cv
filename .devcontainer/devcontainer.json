@@ -14,8 +14,8 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand":  {
     "update-node": "nvm install --lts",
-    "install-playwright-cli": "npm install -g @playwright/cli@latest",
-		"install-playwright-deps": "playwright-cli install"
+    "install-playwright-cli": "npm install -g @playwright/cli@latest --with-deps",
+		"install-playwright-deps": "playwright-cli install && npx playwright install-deps"
   }
 
   // Configure tool-specific properties.

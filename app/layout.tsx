@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'CV - Hadrian de Oliveira - Software Engineer',
+  title: 'CV - Hadrian de Oliveira - Senior Software Engineer | Cloud & Applied AI',
   description: 'CV of Hadrian de Oliveira, Software Engineer based in São Paulo, Brazil',
   generator: 'v0.app',
   icons: {

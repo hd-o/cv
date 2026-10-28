@@ -3,8 +3,8 @@ import Image from "next/image"
 interface EducationEntry {
   institution: string
   logo: string
-  degree: string
   field: string
+  status: string
   dateRange: string
 }
 
@@ -12,16 +12,16 @@ const education: EducationEntry[] = [
   {
     institution: "Toledo Prudente Centro Universitário",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
-    degree: "Bachelor of Science - BS",
-    field: "Information Technology",
-    dateRange: "2015 – 2015",
+    field: "Information Systems",
+    status: "Dropout",
+    dateRange: "2015–2016",
   },
   {
     institution: "Universidade Estadual Paulista Júlio de Mesquita Filho",
     logo: "/logos/unesp.jpeg",
-    degree: "Bachelor of Science - BS",
     field: "Computer Science",
-    dateRange: "2014 – 2014",
+    status: "Dropout",
+    dateRange: "2014–2015",
   },
 ]
 
@@ -41,7 +41,7 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
           {entry.institution}
         </p>
         <p className="text-caption text-muted-foreground">
-          {entry.degree} • {entry.field}
+          Coursework in {entry.field} · {entry.status}
         </p>
         <p className="text-caption text-muted-foreground">{entry.dateRange}</p>
       </div>

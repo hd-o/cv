@@ -29,11 +29,11 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Owned end-to-end development and customer onboarding of a logistics industry-first CRM sync solution integrating HubSpot and Salesforce, with custom filters and property mapping directly from the product UI, reducing sales team setup time from days to minutes",
-          "Engineered logistics data ingestion pipelines (with BullMQ, AWS S3, PostgreSQL, Snowflake), and location-based search powered by Google Maps Geocoding",
-          "Led infrastructure and application hardening for SOC2 compliance; implemented AWS VPC network segmentation, Twingate connectors, Multi-Factor Authentication (Firebase Auth), and automated package vulnerability monitoring",
-          "Established continuous integration and automated testing using GitHub Actions, Heroku, Jest, and Playwright, while embedding automated AI code-reviews (CodeRabbit and GitHub Copilot) to optimize team velocity",
-          "Defined and rolled out agile delivery practices (scope/estimate/handoff) and drove adoption of retrospectives and team-health initiatives",
+          "Led development of HubSpot and Salesforce integrations for a logistics data platform, replacing manual spreadsheet imports with one-click and list-based syncing of contact, company, and logistics data; reduced CRM data preparation and import from days to minutes.",
+          "Onboarded customer IT and sales teams through OAuth setup, property mapping, and custom logistics filters; debugged issues live and shipped follow-up fixes in one- to two-day feedback cycles.",
+          "Implemented AWS KMS envelope encryption for customer OAuth tokens and extracted shared OAuth components; led SOC 2 readiness work across AWS network separation, Twingate, Firebase MFA, and Heroku Private Spaces connectivity to AWS.",
+          "Built logistics data ingestion pipelines with BullMQ, AWS S3, PostgreSQL, and Snowflake.",
+          "Shipped CRM features through spec-driven AI-assisted development, using product requirements, implementation plans, stacked PRs, and human review; established automated testing with GitHub Actions, Jest, and Playwright, and managed CodeRabbit PR reviews.",
         ],
       },
     ],
@@ -43,16 +43,15 @@ const experiences: ExperienceEntry[] = [
     logo: "/logos/keep.jpeg",
     roles: [
       {
-        title: "Engineering Manager • Cards",
+        title: "Tech Lead → Engineering Manager • Cards",
         dateRange: "Feb 2024 – Jul 2024",
         duration: "6 months",
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Delivered virtual credit card integration supporting Tap to Pay via Apple and Google wallets, with multi-org card and credit management, including i2c authentication",
-          "Supported development of infrastructure and partnership enablement for Mastercard physical credit cards, including international shipping and payment flows",
-          "Led a 5-person Cards engineering team through 1:1s, performance management, mentoring, and pairing while owning roadmap scoping and execution with Product",
-          "Introduced async-first engineering workflow that reduced interruptions, accelerated high-priority releases ahead of schedule, and improved team morale",
+          "Led a five-person Cards team, owning roadmap delivery with Product for Apple Pay and Google Wallet integrations and supporting the Mastercard physical-card rollout.",
+          "Implemented web-based card PIN entry and the i2c verification integration; worked directly with i2c engineers to diagnose issues, test fixes, and unblock delivery.",
+          "Coached engineers through pairing and mentoring; replaced daily stand-ups with asynchronous Slack updates and project status reporting in Linear.",
         ],
       },
     ],
@@ -69,11 +68,8 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led the web engineering team through a period of triple-digit company YoY growth in 2023",
-          "Drove Core Web Vitals and SEO improvements from ~40 to ~80 (Lighthouse and Search Console)",
-          "Migrated codebase from JavaScript to TypeScript and introduced Cypress integration testing",
-          "Owned technical direction for performance, and reliability on a high-traffic consumer web platform",
-          "Shifted team from weekly to daily agile release cadence",
+          "Led web engineering and shifted the team from weekly to daily releases, supported by faster deployment and recovery cycles.",
+          "Migrated the codebase from JavaScript to TypeScript and introduced Cypress integration testing.",
         ],
       },
       {
@@ -83,8 +79,9 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Reduced web infrastructure costs by 25% and cut deployment duration from ~40 min to ~10 min, by migrating from Jenkins CI and AWS Elastic Beanstalk to GitHub Actions CI and AWS App Runner",
-          "Built in-house high-throughput web analytics and telemetry pipeline with React and RxJS",
+          "Migrated web deployments from Jenkins and AWS Elastic Beanstalk to GitHub Actions and AWS App Runner, reducing web infrastructure costs by 25% and deployment time from approximately 40 to 10 minutes.",
+          "Automated per-PR preview environments with GitHub Actions and App Runner, creating services when needed and deleting them when PRs closed, without requiring a Next.js migration.",
+          "Built an in-house web analytics and telemetry pipeline with React and RxJS.",
         ],
       },
     ],
@@ -100,9 +97,8 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Built back-office automation tools that compressed hour-long operational tasks into seconds and earned FINRA recognition for audit quality",
-          "Developed dashboards and tooling with SQL and Retool that measurably improved ops efficiency",
-          "Owned back-office encryption services, and end-to-end testing with BrowserStack and Cypress",
+          "Led development of Retool dashboards and internal operations tools, working with backend engineers on supporting APIs and data; replaced spreadsheet-and-email workflows and reduced hour-long tasks to seconds.",
+          "Owned back-office encryption services and end-to-end testing with BrowserStack and Cypress.",
         ],
       },
     ],
@@ -119,8 +115,8 @@ const experiences: ExperienceEntry[] = [
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Owned live chat UI for customer-service agents and supported codebase migration to Vue.js",
-          "Implemented automated UI testing, improving reliability of internal agent-facing applications",
+          "Owned live-chat interfaces for customer-service staff.",
+          "Supported the Vue.js migration, and added automated UI tests."
         ],
       },
       {
@@ -130,7 +126,7 @@ const experiences: ExperienceEntry[] = [
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Developed live chat and chatbot interfaces used by million+ users",
+          "Built live-chat and chatbot interfaces used by more than one million users.",
         ],
       },
       {
@@ -140,8 +136,8 @@ const experiences: ExperienceEntry[] = [
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Developed self-service issue-resolution tools and FAQs that reduced customer-support load",
-          "Ran A/B experiments, user research sessions, and developed web-based CS tooling",
+          "Developed self-service support tools used by millions of users.",
+          "Ran A/B experiments and user research sessions to improve customer-service tools."
         ],
       },
     ],
@@ -151,15 +147,14 @@ const experiences: ExperienceEntry[] = [
     logo: "/logos/niluk.jpeg",
     roles: [
       {
-        title: "Software Engineer • Mobile",
+        title: "Software Engineer • Mobile (part-time)",
         dateRange: "Feb 2018 – Jan 2019",
         duration: "1 year",
         location: "Amsterdam, Netherlands",
         locationType: "On-site",
         description: [
-          "Built a mobile app prototype for event listing to support social networking in big cities",
-          "Presented the product at Web Summit Lisbon 2018, secured funding from the City of Amsterdam, and collaborated on research projects with local universities",
-          "Pitched technical progress and roadmap to mentors and investors",
+          "Built a mobile event-discovery prototype and presented it at Web Summit Lisbon 2018;",
+          "Presented to mentors and investors, receiving funding from the City of Amsterdam.",
         ],
       },
     ],
@@ -175,8 +170,7 @@ const experiences: ExperienceEntry[] = [
         location: "Berlin, Germany",
         locationType: "On-site",
         description: [
-          "Developed web features for job-post distribution, simplified application, and CV PDF generation",
-          "Conducted live user research sessions to inform product direction",
+          "Built job-post distribution, application, and CV PDF-generation features, informed by live user research.",
         ],
       },
     ],
@@ -192,8 +186,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Developed the frontend of an algorithmic trading platform and marketplace for trading models",
-          "Led migration from Angular to React and onboarded/trained new team members",
+          "Built frontend of an algorithmic trading platform; Led React migration, and trained team members.",
         ],
       },
     ],
@@ -209,7 +202,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Delivered web designs (Adobe Fireworks), full-stack web development (PHP + MySQL), and long-form presentation designs (PowerPoint) for local and international clients",
+          "Delivered web design and PHP/MySQL development for local and international clients.",
         ],
       },
     ],
@@ -219,13 +212,13 @@ const experiences: ExperienceEntry[] = [
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
     roles: [
       {
-        title: "Web Developer • Tools",
+        title: "Web Development Intern • Tools",
         dateRange: "Feb 2015 – Apr 2015",
         duration: "3 months",
         location: "Presidente Prudente, São Paulo, Brazil",
         locationType: "On-site",
         description: [
-          "Developed full-stack features for college-wide event management system",
+          "Built full-stack features for a college-wide ASP.NET event-management system.",
         ],
       },
     ],
