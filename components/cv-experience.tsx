@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import Image from "next/image"
 
@@ -12,6 +13,7 @@ interface Role {
 
 interface ExperienceEntry {
   company: string
+  link: string
   logo: string
   totalDuration?: string
   roles: Role[]
@@ -20,6 +22,7 @@ interface ExperienceEntry {
 const experiences: ExperienceEntry[] = [
   {
     company: "Revenue Vessel",
+    link: "https://www.linkedin.com/company/revenue-vessel",
     logo: "/logos/revenue_vessel.jpeg",
     roles: [
       {
@@ -40,6 +43,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Keep",
+    link: "https://www.linkedin.com/company/trykeep",
     logo: "/logos/keep.jpeg",
     roles: [
       {
@@ -58,6 +62,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Reelgood",
+    link: "https://www.linkedin.com/company/reelgood-llc",
     logo: "/logos/reelgood.jpeg",
     totalDuration: "1 year 10 months",
     roles: [
@@ -88,6 +93,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Altruist",
+    link: "https://www.linkedin.com/company/altruistcorp",
     logo: "/logos/altruistcorp.jpeg",
     roles: [
       {
@@ -104,6 +110,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Booking.com",
+    link: "https://www.linkedin.com/company/booking.com",
     logo: "/logos/bookingcom.jpeg",
     totalDuration: "1 year 6 months",
     roles: [
@@ -144,6 +151,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "niluk.app",
+    link: "https://www.linkedin.com/company/niluk",
     logo: "/logos/niluk.jpeg",
     roles: [
       {
@@ -162,6 +170,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "HeyJobs",
+    link: "https://www.linkedin.com/company/heyjobs",
     logo: "/logos/heyjobs.jpeg",
     roles: [
       {
@@ -179,6 +188,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Quantler",
+    link: "https://www.linkedin.com/company/quantler",
     logo: "/logos/quantler.jpeg",
     roles: [
       {
@@ -196,6 +206,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Upwork",
+    link: "https://www.linkedin.com/company/upwork",
     logo: "/logos/upwork.jpeg",
     roles: [
       {
@@ -213,6 +224,7 @@ const experiences: ExperienceEntry[] = [
   },
   {
     company: "Toledo Prudente Centro Universitário",
+    link: "https://www.linkedin.com/company/faculdade-toledo-presidente-prudente",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
     roles: [
       {
@@ -270,7 +282,12 @@ function ExperienceCard({ entry }: { entry: ExperienceEntry }) {
       <div className="flex-1">
         <div className="cv-company-heading flex items-start justify-between">
           <div>
-            <h3 className="text-body font-semibold text-foreground">{entry.company}</h3>
+            <h3 className="text-body font-semibold text-foreground">
+              <a href={entry.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {entry.company}
+                <ExternalLink aria-hidden="true" className="ml-1 inline-block h-3 w-3 align-[-0.125em] opacity-50" />
+              </a>
+            </h3>
           </div>
         </div>
 

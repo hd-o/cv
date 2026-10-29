@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Languages } from "lucide-react"
+import { ExternalLink, Github, Linkedin, Mail, Languages } from "lucide-react"
 
 export function CVHeader() {
   return (
@@ -32,7 +32,10 @@ export function CVHeader() {
           <span className="w-6 shrink-0">
             <Mail className="h-4 w-4" />
           </span>
-          <span className="break-all">hadrian.dev@outlook.com</span>
+          <span className="break-all">
+            hadrian.dev@outlook.com
+            <ExternalLink aria-hidden="true" className="ml-1 inline-block h-3 w-3 align-[-0.125em] opacity-50" />
+          </span>
         </a>
         <a
           href="https://linkedin.com/in/hadrian-dev"
@@ -43,7 +46,10 @@ export function CVHeader() {
           <span className="w-6 shrink-0">
             <Linkedin className="h-4 w-4" />
           </span>
-          <span className="break-all">linkedin.com/in/hadrian-dev</span>
+          <span className="break-all">
+            linkedin.com/in/hadrian-dev
+            <ExternalLink aria-hidden="true" className="ml-1 inline-block h-3 w-3 align-[-0.125em] opacity-50" />
+          </span>
         </a>
         <a
           href="https://github.com/hd-o"
@@ -54,7 +60,10 @@ export function CVHeader() {
           <span className="w-6 shrink-0">
             <Github className="h-4 w-4" />
           </span>
-          <span className="break-all">github.com/hd-o</span>
+          <span className="break-all">
+            github.com/hd-o
+            <ExternalLink aria-hidden="true" className="ml-1 inline-block h-3 w-3 align-[-0.125em] opacity-50" />
+          </span>
         </a>
       </div>
     </header>

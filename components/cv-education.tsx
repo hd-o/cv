@@ -1,7 +1,9 @@
+import { ExternalLink } from "lucide-react"
 import Image from "next/image"
 
 interface EducationEntry {
   institution: string
+  link: string
   logo: string
   field: string
   status: string
@@ -11,6 +13,7 @@ interface EducationEntry {
 const education: EducationEntry[] = [
   {
     institution: "Toledo Prudente",
+    link: "https://www.linkedin.com/school/faculdade-toledo-presidente-prudente/",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
     field: "B.Sc. Information Systems",
     status: "Dropout",
@@ -18,6 +21,7 @@ const education: EducationEntry[] = [
   },
   {
     institution: "Universidade Estadual Paulista",
+    link: "https://www.linkedin.com/school/unesp---universidade-estadual-paulista-j-lio-de-mesquita-filho-/",
     logo: "/logos/unesp.jpeg",
     field: "B.Sc. Computer Science",
     status: "Dropout",
@@ -39,7 +43,10 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
       </div>
       <div>
         <p className="text-body font-semibold text-foreground">
-          {entry.institution}
+          <a href={entry.link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+            {entry.institution}
+            <ExternalLink aria-hidden="true" className="ml-1 inline-block h-3 w-3 align-[-0.125em] opacity-50" />
+          </a>
         </p>
         <p className="text-caption text-muted-foreground">
           {entry.field}
