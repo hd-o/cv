@@ -85,7 +85,7 @@ const experiences: ExperienceEntry[] = [
         locationType: "Remote",
         description: [
           "Migrated web deployments from Jenkins and AWS Elastic Beanstalk to GitHub Actions and AWS App Runner, reducing web infrastructure costs by 25% and deployment time from ~40 to ~10 minutes.",
-          "Automated per-PR preview environments with GitHub Actions and App Runner, creating services when needed and deleting them when PRs closed, without requiring a Next.js migration.",
+          "Automated per-PR preview environments with GitHub Actions and App Runner, creating services when needed and deleting them when PRs closed.",
           "Built in-house web analytics and telemetry pipelines with RxJS.",
         ],
       },
