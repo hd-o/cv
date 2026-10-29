@@ -22,7 +22,7 @@ export function CVHeader() {
             <Languages className="h-4 w-4" />
           </span>
           <span className="break-all">
-            EN 5/5 • PT 5/5 • ES 3/5
+            EN: C2 • PT: C2 • ES: B1
           </span>
         </div>
         <a
