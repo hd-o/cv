@@ -20,11 +20,11 @@ export default function Home() {
             <div className="cv-sidebar-sections flex flex-col gap-6">
               <CVTechnicalSkills />
               <Separator />
+              <CVProjects />
+              <Separator />
               <CVCertifications />
               <Separator />
               <CVSpecializations />
-              <Separator />
-              <CVProjects />
               <Separator />
               <CVEducation />
             </div>

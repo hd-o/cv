@@ -51,7 +51,7 @@ const experiences: ExperienceEntry[] = [
         description: [
           "Led a five-person Cards team, owning roadmap delivery for Apple Pay and Google Wallet integrations, and supporting Mastercard physical-card rollout.",
           "Implemented web-based card PIN entry and issuer integration. Worked directly with issuer engineers to diagnose, test, and unblock delivery.",
-          "Coached engineers. Introduced async stand-ups, and remote Agile.",
+          "Coached engineers. Managed performance review. Moved from sync to async daily stand-ups, and project status updates through Linear.",
         ],
       },
     ],
@@ -97,8 +97,7 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led development of Retool dashboards and internal operations tools, isolated encryption server; replaced spreadsheet-and-email workflows and reduced hour-long tasks to seconds.",
-          "Owned back-office encryption services and end-to-end testing with BrowserStack and Cypress.",
+          "Led development of Retool dashboards and internal operations tools, isolated encryption server, and Cypress E2E tests; Replaced spreadsheet-and-email workflows and reduced hour-long tasks to seconds.",
         ],
       },
     ],

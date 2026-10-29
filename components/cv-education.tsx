@@ -10,14 +10,14 @@ interface EducationEntry {
 
 const education: EducationEntry[] = [
   {
-    institution: "Toledo Prudente Centro Universitário",
+    institution: "Toledo Prudente",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
     field: "B.Sc. Information Systems",
     status: "Dropout",
     dateRange: "2015–2016",
   },
   {
-    institution: "Universidade Estadual Paulista Júlio de Mesquita Filho (Unesp)",
+    institution: "Universidade Estadual Paulista",
     logo: "/logos/unesp.jpeg",
     field: "B.Sc. Computer Science",
     status: "Dropout",

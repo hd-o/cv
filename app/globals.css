@@ -264,9 +264,20 @@
     margin-block: 0 1.5mm;
   }
 
-  .cv-detail-card + .cv-detail-card,
   .cv-education-card + .cv-education-card {
-    margin-top: 6mm;
+    margin-top: 3mm;
+  }
+
+  section > h2 {
+    margin-bottom: 3mm !important;
+  }
+
+  .cv-specializations {
+    margin-top: 7mm;
+  }
+
+  section .cv-detail-card + .cv-detail-card {
+    margin-top: 3mm !important;
   }
 
   .cv-logo {
