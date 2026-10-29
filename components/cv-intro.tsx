@@ -13,13 +13,12 @@ const summary: IntroSection = {
 }
 
 const technicalSkills: IntroSection = {
-  title: "Technical Skills",
+  title: "Relevant Skills",
   points: [
-    "Languages: C#, Cypher, JavaScript, PHP, Python, Rust, SQL, TypeScript.",
-    "Web & Data: Angular, MySQL, Neo4j, Next.js, Node.js, PostgreSQL, React.js, Snowflake, Vue.js.",
-    "Cloud: AWS, Cloudflare, Docker, GitHub Actions, Google Cloud, Heroku, Jenkins, Vercel.",
-    "Testing & Tools: BrowserStack, Cypress, Jest, Playwright, Pytest, Retool, Testcontainers.",
-    "AI: AWS Bedrock, Arize Phoenix, GCP Gemini Enterprise, LangChain, LangGraph, LangSmith.",
+    "AI: Python, AWS Bedrock, GCP Gemini Enterprise, LangChain, LangGraph, LangSmith, Arize Phoenix",
+    "Infra: AWS, Google Cloud, Cloudflare, Heroku, Docker, GitHub Actions",
+    "Backend: TypeScript, Rust, Node.js, Neo4j, PostgreSQL, Snowflake, SQL",
+    "Testing: Playwright, Jest, Pytest",
   ],
 }
 

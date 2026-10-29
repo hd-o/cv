@@ -2,6 +2,13 @@ import { CVDetailCard } from "@/components/cv-detail-card"
 
 const specializations = [
   {
+    name: "RAG and Agentic AI",
+    issuer: "IBM",
+    logo: "/logos/ibm.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/PCUS0G5GLX83",
+    description: "Building retrieval-augmented generation (RAG) applications and agentic workflows, using vector databases, LLM tool calling, and LangChain frameworks.",
+  },
+  {
     name: "Project Management",
     issuer: "Google",
     logo: "/logos/google.jpeg",
@@ -9,11 +16,11 @@ const specializations = [
     description: "Project lifecycle, including initiation, project planning, execution. Agile, Scrum, risk management, and stakeholder management.",
   },
   {
-    name: "RAG and Agentic AI",
-    issuer: "IBM",
-    logo: "/logos/ibm.jpeg",
-    link: "https://www.coursera.org/account/accomplishments/specialization/PCUS0G5GLX83",
-    description: "Building retrieval-augmented generation (RAG) applications and agentic workflows, using vector databases, LLM tool calling, and LangChain frameworks.",
+    name: "GCP for AWS Professionals",
+    issuer: "Google",
+    logo: "/logos/google.jpeg",
+    link: "https://www.coursera.org/account/accomplishments/specialization/W8DMITU7NTZ8",
+    description: "Google Cloud infrastructure compared with AWS, including hands-on labs for IAM, networking, compute, storage, containers, deployment, and monitoring.",
   },
 ]
 

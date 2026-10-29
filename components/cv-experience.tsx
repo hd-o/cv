@@ -29,10 +29,10 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led development of HubSpot and Salesforce integrations for a logistics data platform, replacing manual spreadsheet imports with one-click and list-based syncing of contact, company, and logistics data; reduced CRM data preparation and import from days to minutes.",
-          "Onboarded customer IT and sales teams through OAuth setup, property mapping, and custom logistics filters; debugged issues live and shipped follow-up fixes in one- to two-day feedback cycles.",
-          "Implemented AWS KMS envelope encryption for customer OAuth tokens and extracted shared OAuth components; led SOC 2 readiness work across AWS network separation, Twingate, Firebase MFA, and Heroku Private Spaces connectivity to AWS.",
-          "Built logistics data ingestion pipelines with BullMQ, AWS S3, PostgreSQL, and Snowflake.",
+          "Owned development of HubSpot and Salesforce integrations, replacing manual spreadsheet imports with one-click syncing of contact and company data, reducing CRM data import from days to minutes.",
+          "Onboarded customer IT and sales teams through OAuth setup, property mapping, and custom logistics filters; debugged issues live and shipped follow-up fixes in one-day feedback cycles.",
+          "Implemented AWS KMS envelope encryption for OAuth tokens. Led SOC 2 readiness including AWS network separation, VPCs, Twingate VPN, Firebase MFA, and Heroku connectivity to AWS.",
+          "Built data ingestion pipelines with BullMQ, AWS S3, and Snowflake.",
           "Shipped CRM features through spec-driven AI-assisted development, using product requirements, implementation plans, stacked PRs, and human review; established automated testing with GitHub Actions, Jest, and Playwright, and managed CodeRabbit PR reviews.",
         ],
       },
@@ -49,9 +49,9 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led a five-person Cards team, owning roadmap delivery with Product for Apple Pay and Google Wallet integrations and supporting the Mastercard physical-card rollout.",
-          "Implemented web-based card PIN entry and the i2c verification integration; worked directly with i2c engineers to diagnose issues, test fixes, and unblock delivery.",
-          "Coached and mentored engineers; Introduced async stand-ups and project status reporting in Linear.",
+          "Led a five-person Cards team, owning roadmap delivery for Apple Pay and Google Wallet integrations, and supporting Mastercard physical-card rollout.",
+          "Implemented web-based card PIN entry and issuer integration. Worked directly with issuer engineers to diagnose, test, and unblock delivery.",
+          "Coached engineers. Introduced async stand-ups, and remote Agile.",
         ],
       },
     ],
@@ -68,8 +68,8 @@ const experiences: ExperienceEntry[] = [
         location: "São Paulo, Brazil",
         locationType: "Remote",
         description: [
-          "Led web engineering and shifted team from weekly to daily releases, and async status updates.",
-          "Migrated the codebase from JavaScript to TypeScript and introduced Cypress integration testing.",
+          "Led web engineering, and shifted team from weekly to daily releases.",
+          "Migrated codebase to TypeScript, and introduced Cypress E2E testing.",
         ],
       },
       {
@@ -148,11 +148,11 @@ const experiences: ExperienceEntry[] = [
     logo: "/logos/niluk.jpeg",
     roles: [
       {
-        title: "Software Engineer • Mobile (part-time)",
+        title: "Founding Software Engineer",
         dateRange: "Feb 2018 – Jan 2019",
         duration: "1 year",
         location: "Amsterdam, Netherlands",
-        locationType: "On-site",
+        locationType: "On-site (part-time)",
         description: [
           "Built an event mobile app with React, Node.js, and MongoDB.",
           "Presented conference attendees at a Web Summit Lisbon 2018 booth.",

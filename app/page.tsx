@@ -18,13 +18,13 @@ export default function Home() {
             <CVSummary />
             <Separator className="my-6" />
             <div className="cv-sidebar-sections flex flex-col gap-6">
-              <CVProjects />
-              <Separator />
               <CVTechnicalSkills />
               <Separator />
               <CVCertifications />
               <Separator />
               <CVSpecializations />
+              <Separator />
+              <CVProjects />
               <Separator />
               <CVEducation />
             </div>
