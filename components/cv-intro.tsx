@@ -7,8 +7,7 @@ const summary: IntroSection = {
   title: "Summary",
   points: [
     "Full-stack software engineer with founding-engineer and engineering-management experience, delivering products across logistics, fintech, and consumer platforms.",
-    "Led CRM integrations and customer onboarding, improved AWS infrastructure, and managed a five-person engineering team.",
-    "Built an open-source Python/Neo4j agent with HITL controls, and multi-turn evals.",
+    "Led integration projects, customer support and onboarding, improved cloud infrastructure, managed engineering teams, and presented at conferences.",
   ],
 }
 

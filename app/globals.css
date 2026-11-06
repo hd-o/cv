@@ -299,6 +299,10 @@
     margin-top: 1mm;
   }
 
+  .cv-certifications {
+    margin-bottom: 100px;
+  }
+
   .cv-experience-card,
   .cv-education-card,
   .cv-role {
