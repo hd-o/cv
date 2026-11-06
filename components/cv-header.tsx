@@ -8,7 +8,7 @@ export function CVHeader() {
           Hadrian de Oliveira
         </h1>
         <p className="text-body text-muted-foreground">
-          {"Senior Software Engineer"}
+          {"Staff Software Engineer"}
         </p>
         <p className="text-body text-muted-foreground">
           {"São Paulo, Brazil"}
