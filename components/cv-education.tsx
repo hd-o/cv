@@ -6,7 +6,6 @@ interface EducationEntry {
   link: string
   logo: string
   field: string
-  status: string
   dateRange: string
 }
 
@@ -15,16 +14,14 @@ const education: EducationEntry[] = [
     institution: "Toledo Prudente",
     link: "https://www.linkedin.com/school/faculdade-toledo-presidente-prudente/",
     logo: "/logos/faculdade_toledo_presidente_prudente.jpeg",
-    field: "B.Sc. Information Systems",
-    status: "Dropout",
+    field: "Coursework in Information Systems",
     dateRange: "2015–2016",
   },
   {
     institution: "Universidade Estadual Paulista",
     link: "https://www.linkedin.com/school/unesp---universidade-estadual-paulista-j-lio-de-mesquita-filho-/",
     logo: "/logos/unesp.jpeg",
-    field: "B.Sc. Computer Science",
-    status: "Dropout",
+    field: "Coursework in Computer Science",
     dateRange: "2014–2015",
   },
 ]
@@ -52,7 +49,7 @@ function EducationCard({ entry }: { entry: EducationEntry }) {
           {entry.field}
         </p>
         <p className="text-caption text-muted-foreground">
-          {entry.dateRange} · {entry.status}
+          {entry.dateRange}
         </p>
       </div>
     </div>
