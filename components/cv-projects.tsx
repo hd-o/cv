@@ -2,8 +2,13 @@ import { CVDetailCard } from "@/components/cv-detail-card"
 
 const projects = [
   {
+    title: "Voice Freight Broker Agent",
+    description: "Browser-based freight brokerage simulation with live voice calls and transcripts powered by OpenAI GPT Live and Cloudflare Workers, including coordinated calls and async post-call analysis.",
+    link: "https://github.com/hd-o/voice-freight-broker",
+  },
+  {
     title: "World Cup Graph Agent",
-    description: "Python multi-agent chatbot (LangChain DeepAgents, Neo4j) for graph-grounded World Cup Q&A and HITL approval-gated enrichment; Pytest LangSmith evals combining deterministic checks of answer grounding, approval enforcement, graph mutations, and conversation isolation with LLM-judged answer quality; Deployments to AWS AgentCore and GCP Cloud Run.",
+    description: "LangChain Python AI chatbot for World Cup Q&A and HITL gated enrichment; Evals checking answer grounding, approval enforcement, mutations, and isolation, with LLM-judged analysis; Deployments to AWS AgentCore and GCP Cloud Run.",
     link: "https://github.com/hd-o/world-cup-graph-agent",
   },
 ]
